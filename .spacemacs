@@ -31,7 +31,7 @@ values."
      python
      ;; better-defaults
      emacs-lisp
-     ;; git
+     git
      markdown
      ;; org
      ;; (shell :variables
@@ -39,7 +39,7 @@ values."
      ;;        shell-default-position 'bottom)
      ;; spell-checking
      syntax-checking
-     ;; version-control
+     version-control
      )
    ;; List of additional packages that will be installed without being
    ;; wrapped in a layer. If you need some configuration for these
@@ -84,11 +84,10 @@ values."
    ;; Press <SPC> T n to cycle to the next theme in the list (works great
    ;; with 2 themes variants, one dark and one light)
    dotspacemacs-themes '(
-                         spolsky
-                         zenburn
+                         underwater
+                         tsdh-dark
+                         badwolf
                          spacemacs-dark
-                         spacemacs-light
-                         solarized-light
                          solarized-dark
                         )
    ;; If non nil the cursor color matches the state color.
@@ -96,7 +95,7 @@ values."
    ;; Default font. `powerline-scale' allows to quickly tweak the mode-line
    ;; size to make separators look not too crappy.
    dotspacemacs-default-font '("Source Code Pro"
-                               :size 13
+                               :size 12
                                :weight normal
                                :width normal
                                :powerline-scale 1.1)
@@ -198,12 +197,15 @@ values."
   "Initialization function for user code.
 It is called immediately after `dotspacemacs/init'.  You are free to put any
 user code."
+  (setq-default git-magit-status-fullscreen t)
   )
 
 (defun dotspacemacs/user-config ()
   "Configuration function for user code.
  This function is called at the very end of Spacemacs initialization after
 layers configuration. You are free to put any user code."
+  (setq magit-repository-directories '("~/repos/"))
+  (global-git-commit-mode t)
   (add-to-list 'auto-mode-alist '("\\.jsx?\\'\\'" . react-mode))
 
   (setq-default
@@ -263,7 +265,7 @@ layers configuration. You are free to put any user code."
     ("fa2b58bb98b62c3b8cf3b6f02f058ef7827a8e497125de0254f56e373abee088" default)))
  '(package-selected-packages
    (quote
-    (async pyvenv pytest pyenv-mode pip-requirements hy-mode helm-pydoc cython-mode company-anaconda anaconda-mode packed multiple-cursors json-reformat bracketed-paste helm-flyspell package-build bind-key auto-complete avy anzu highlight go-mode projectile helm-core yasnippet evil ws-butler spaceline restart-emacs persp-mode lorem-ipsum hl-todo help-fns+ helm-flx helm-company evil-mc evil-lisp-state evil-indent-plus auto-compile ace-jump-helm-line bind-map web-mode web-beautify tagedit slim-mode scss-mode sass-mode mmm-mode markdown-toc markdown-mode less-css-mode json-mode js2-refactor js2-mode js-doc jade-mode helm-css-scss helm-c-yasnippet haml-mode go-eldoc gh-md flycheck-pos-tip flycheck emmet-mode company-web company-tern company-statistics company-quickhelp company-go company coffee-mode auto-yasnippet ac-ispell window-numbering volatile-highlights vi-tilde-fringe spray smooth-scrolling smartparens rainbow-delimiters powerline popwin popup pcre2el paradox page-break-lines open-junk-file neotree move-text macrostep linum-relative leuven-theme info+ indent-guide ido-vertical-mode hungry-delete highlight-parentheses highlight-numbers highlight-indentation helm-themes helm-swoop helm-projectile helm-mode-manager helm-make helm-descbinds helm-ag helm google-translate golden-ratio flx-ido fill-column-indicator fancy-battery expand-region exec-path-from-shell evil-visualstar evil-tutor evil-surround evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-matchit evil-jumper evil-indent-textobject evil-iedit-state evil-exchange evil-escape evil-args evil-anzu eval-sexp-fu elisp-slime-nav define-word clean-aindent-mode buffer-move auto-highlight-symbol auto-dictionary aggressive-indent adaptive-wrap ace-window ace-link which-key use-package spacemacs-theme s quelpa evil-leader dash))))
+    (barwolf-theme web-completion-data smeargle orgit magit-gitflow helm-gitignore request gitignore-mode gitconfig-mode gitattributes-mode git-timemachine git-messenger evil-magit magit magit-popup hydra git-gutter-fringe+ git-gutter-fringe fringe-helper git-gutter+ git-commit with-editor git-gutter diff-hl async pyvenv pytest pyenv-mode pip-requirements hy-mode helm-pydoc cython-mode company-anaconda anaconda-mode packed multiple-cursors json-reformat bracketed-paste helm-flyspell package-build bind-key auto-complete avy anzu highlight go-mode projectile helm-core yasnippet evil ws-butler spaceline restart-emacs persp-mode lorem-ipsum hl-todo help-fns+ helm-flx helm-company evil-mc evil-lisp-state evil-indent-plus auto-compile ace-jump-helm-line bind-map web-mode web-beautify tagedit slim-mode scss-mode sass-mode mmm-mode markdown-toc markdown-mode less-css-mode json-mode js2-refactor js2-mode js-doc jade-mode helm-css-scss helm-c-yasnippet haml-mode go-eldoc gh-md flycheck-pos-tip flycheck emmet-mode company-web company-tern company-statistics company-quickhelp company-go company coffee-mode auto-yasnippet ac-ispell window-numbering volatile-highlights vi-tilde-fringe spray smooth-scrolling smartparens rainbow-delimiters powerline popwin popup pcre2el paradox page-break-lines open-junk-file neotree move-text macrostep linum-relative leuven-theme info+ indent-guide ido-vertical-mode hungry-delete highlight-parentheses highlight-numbers highlight-indentation helm-themes helm-swoop helm-projectile helm-mode-manager helm-make helm-descbinds helm-ag helm google-translate golden-ratio flx-ido fill-column-indicator fancy-battery expand-region exec-path-from-shell evil-visualstar evil-tutor evil-surround evil-search-highlight-persist evil-numbers evil-nerd-commenter evil-matchit evil-jumper evil-indent-textobject evil-iedit-state evil-exchange evil-escape evil-args evil-anzu eval-sexp-fu elisp-slime-nav define-word clean-aindent-mode buffer-move auto-highlight-symbol auto-dictionary aggressive-indent adaptive-wrap ace-window ace-link which-key use-package spacemacs-theme s quelpa evil-leader dash))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
