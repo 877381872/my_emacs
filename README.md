@@ -6,3 +6,5 @@
 * 需要安装ternjs
 * neotree
 * js2-mode
+* tern
+* tern-auto-complete
