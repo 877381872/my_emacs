@@ -8,6 +8,7 @@
 * js2-mode
 * tern
 * tern-auto-complete
+* web-mode
 
 ## 我的zsh配置文件
 ### 配置了一下快捷键，还有iterm中使用emacsGUI的快捷键
