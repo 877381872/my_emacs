@@ -15,3 +15,15 @@
 * zsh
 * oy-my-zsh
 * emacs（高版本）：配置中不使用默认的emacs
+
+## 添加golang的自动补全
+* 使用gocode补全。
+## 修改js2-mode和js2-jsx－mode的ternjs补全
+
+### remove the go-autocomplete.el file to the .emacs.d/list-lisp/. 
+* add the commands in .emacs.d/custom.el:
+```
+(add-to-list 'load-path "~/.emacs.d/site-lisp/")
+(provide 'custom)
+;;; custom.el ends here
+```
