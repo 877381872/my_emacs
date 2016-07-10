@@ -15,6 +15,7 @@
 ;;; emacs config
 (autoload 'tern-mode "tern.el" nil t)
 (add-hook 'js2-mode-hook (lambda () (tern-mode t)))
+(add-hook 'js2-js2x-mode-hook (lambda () (tern-mode t)))
 (eval-after-load 'tern
   '(progn
      (require 'tern-auto-complete)
@@ -25,22 +26,7 @@
 (add-hook 'js-mode-hook 'js2-minor-mode)
 (add-to-list 'interpreter-mode-alist '("node" . js2-mode))
 (add-to-list 'interpreter-mode-alist '("node" . js2-jsx-mode))
-;; adjust indents for web-mode to 2 spaces
-(defun my-web-mode-hook ()
-  "Hooks for Web mode. Adjust indents"
-  ;;; http://web-mode.org/
-  (setq web-mode-markup-indent-offset 2)
-  (setq web-mode-css-indent-offset 2)
-  (setq web-mode-code-indent-offset 2))
-(add-hook 'web-mode-hook  'my-web-mode-hook)
-;; for better jsx syntax-highlighting in web-mode
-;; - courtesy of Patrick @halbtuerke
-(defadvice web-mode-highlight-part (around tweak-jsx activate)
-  (if (equal web-mode-content-type "jsx")
-      (let ((web-mode-enable-part-face nil))
-        ad-do-it)
-    ad-do-it))
-(require 'web-beautify) ;; Not necessary if using ELPA package
+(require 'react-snippets)
 (eval-after-load 'js2-mode
   '(define-key js2-mode-map (kbd "C-c b") 'web-beautify-js))
 (eval-after-load 'json-mode
@@ -68,4 +54,13 @@
   '(add-hook 'css-mode-hook
              (lambda ()
                (add-hook 'before-save-hook 'web-beautify-css-buffer t t))))
+;;; ac-js2
+(add-hook 'js2-mode-hook 'ac-js2-mode)
+(add-hook 'js2--jsx-mode-hook 'ac-js2-mode)
+(setq ac-js2-evaluate-calls t)
+;;; go-auto-complete config
+(require 'go-autocomplete)
+(require 'auto-complete-config)
+(ac-config-default)
 (provide 'init-local)
+;;; init-local.el ends here
