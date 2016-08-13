@@ -4,7 +4,7 @@
 (setq display-time-24hr-format t) ; 24小时格式
 (setq display-time-day-and-date t) ; 显示日期
 (global-auto-complete-mode t) ;;; globel auto-complete
-(global-set-key [f9] 'neotree-toggle)
+(global-set-key [f9] 'neotree-toggle(global-set-key (kbd "C-c C-q") 'tern-find-definition) ;;; 设定js跳转跳转快捷键
 ;;; emacs config
 (autoload 'tern-mode "tern.el" nil t)
 (add-hook 'js2-mode-hook (lambda () (tern-mode t)))
