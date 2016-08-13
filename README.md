@@ -25,6 +25,7 @@
 
 ## 添加golang的自动补全
 * 使用gocode补全。
+
 ## 修改js2-mode和js2-jsx－mode的ternjs补全
 
 ### remove the go-autocomplete.el file to the .emacs.d/selfPlugin/. 
