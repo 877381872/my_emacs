@@ -25,5 +25,34 @@
 (ac-config-default)
 ;;; 第三方插件
 (add-to-list 'load-path (concat dotfiles-dir "selfPlugins"))
+;;; org-mode config
+(add-hook 'org-mode-hook (lambda () (setq truncate-lines nil)))
+;;; css 显示颜色
+(defun xah-syntax-color-hex ()
+  "Syntax color text of the form 「#ff1100」 and 「#abc」 in current buffer.
+URL `http://ergoemacs.org/emacs/emacs_CSS_colors.html'
+Version 2016-07-04"
+  (interactive)
+  (font-lock-add-keywords
+   nil
+   '(("#[ABCDEFabcdef[:digit:]]\\{3\\}"
+      (0 (put-text-property
+          (match-beginning 0)
+          (match-end 0)
+          'face (list :background
+                      (let* (
+                       (ms (match-string-no-properties 0))
+                       (r (substring ms 1 2))
+                       (g (substring ms 2 3))
+                       (b (substring ms 3 4)))
+                  (concat "#" r r g g b b))))))
+     ("#[ABCDEFabcdef[:digit:]]\\{6\\}"
+      (0 (put-text-property
+          (match-beginning 0)
+          (match-end 0)
+          'face (list :background (match-string-no-properties 0)))))))
+  (font-lock-fontify-buffer))
+(add-hook 'css-mode-hook 'xah-syntax-color-hex)
+(add-hook 'less-mode-hook 'xah-syntax-color-hex)
 (provide 'custom)
 ;;; custom.el ends here
