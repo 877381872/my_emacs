@@ -15,6 +15,7 @@
 * go-auto-complete
 * web-mode
 * helm-go-package
+* xah-css-mode
 * go-snippets
 
 ## 我的zsh配置文件
