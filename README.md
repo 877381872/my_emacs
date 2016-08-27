@@ -17,6 +17,8 @@
 * helm-go-package
 * xah-css-mode
 * go-snippets
+* whitespace-clearup-mode
+* find-file-in-repository
 
 ## 我的zsh配置文件
 ### 配置了一下快捷键，还有iterm中使用emacsGUI的快捷键
