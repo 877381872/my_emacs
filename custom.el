@@ -54,5 +54,9 @@ Version 2016-07-04"
   (font-lock-fontify-buffer))
 (add-hook 'css-mode-hook 'xah-syntax-color-hex)
 (add-hook 'less-mode-hook 'xah-syntax-color-hex)
+;;; find-file-responsty
+(global-set-key (kbd "C-x f") 'find-file-in-repository)
+;;; 设置保存前自动清除多余空格
+(global-whitespace-cleanup-mode t)
 (provide 'custom)
 ;;; custom.el ends here
