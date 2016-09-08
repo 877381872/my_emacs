@@ -58,5 +58,8 @@ Version 2016-07-04"
 (global-set-key (kbd "C-x f") 'find-file-in-repository)
 ;;; 设置保存前自动清除多余空格
 (global-whitespace-cleanup-mode t)
+(global-set-key (kbd "C-x C") 'whitespace-cleanup)
+;;; set the avy-goto-line
+(global-set-key (kbd "C-l") 'avy-goto-line)
 (provide 'custom)
 ;;; custom.el ends here
