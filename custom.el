@@ -182,6 +182,12 @@ Version 2016-07-04"
           "Search the word at point with Dash." t nil)
 (global-set-key "\C-cd" 'dash-at-point)
 (global-set-key "\C-ce" 'dash-at-point-with-docset)
+
+;;; golang程序保存前自动format
+(add-hook 'before-save-hook #'gofmt-before-save)
+;;; 跳转定义之后再跳转回文件
+(global-set-key (kbd "C-c C-b") 'pop-tag-mark)
+
 ;;; 直接在emacs运行当前文件，比如go程序，js程序
 
 (defun xah-run-current-file ()
