@@ -1,7 +1,7 @@
 ## mac上我常用的软件
 
 ### 软件列表
-  1. paaword
+  1. 1password
   2. 网易云音乐
   3. wechat
   4. airmail邮件客户端
