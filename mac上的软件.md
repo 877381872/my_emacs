@@ -1,7 +1,7 @@
 ## mac上我常用的软件
 
 ### 软件列表
-  1.1paaword
+  1. paaword
   2. 网易云音乐
   3. wechat
   4. airmail邮件客户端
@@ -18,4 +18,4 @@
   15. tunnelblick 使用这个链接公司vpn
   16. spechtilite使用这个链接翻墙vpn**直接在github上搜**
  
-## 以上软件出了dash。其余的都可以在[xclient.info](http://xclient.info/)和[mac破解](http://www.macappstore.net/)找到
+## 以上软件除了dash**因为我买了**。其余的都可以在[xclient.info](http://xclient.info/)和[mac破解](http://www.macappstore.net/)找到
