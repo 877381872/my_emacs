@@ -18,8 +18,10 @@
 * xah-css-mode
 * go-snippets
 * whitespace-clearup-mode
-* find-file-in-repository
-* highlight-indent**记不清了，可以去melpa搜索**
+* highlight-indent-guides**记不清了，可以去melpa搜索**
+* linum-relative
+* dash-at-point
+* eslint-fix
 
 ## 我的zsh配置文件
 ### 配置了一下快捷键，还有iterm中使用emacsGUI的快捷键
