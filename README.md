@@ -23,10 +23,14 @@
 * dash-at-point
 * eslint-fix
 
-## 我的zsh配置文件
-### 配置了一下快捷键，还有iterm中使用emacsGUI的快捷键
-* zsh
-* oy-my-zsh
-* emacs（高版本）：配置中不使用默认的emacs
+## 现在更喜欢使用fish和oh-my-fish
+* 首先在github上自行下载fish 和oh-my-fish
+* 把config.fish.md重命名为```config.fish```然后放入```~/.config/fish```中
+  
+## ~~ 我的zsh配置文件
+### ~~ 配置了一下快捷键，还有iterm中使用emacsGUI的快捷键
+* ~~ zsh
+* ~~ oy-my-zsh
+* ~~ emacs（高版本）：配置中不使用默认的emacs
 
 ## 修改js2-mode和js2-jsx－mode的ternjs补全
