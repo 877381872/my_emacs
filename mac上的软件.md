@@ -4,11 +4,11 @@
   1. 1password
   2. 网易云音乐
   3. wechat
-  4. airmail邮件客户端
-  5. alfred3 效率神奇
-  6. cleanmymac3 清理软件
-  7. dash开发文档神奇
-  8. docker
+  4. ~~airmail~~unibox邮件客户端
+  5. alfred3 效率神器
+  6. cleanmymac3 清理软件
+  7. dash开发文档神器
+  8. docker
   9. eim企业qq
   10. emacs 写代码就用它
   11. chrome
