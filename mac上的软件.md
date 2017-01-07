@@ -16,8 +16,7 @@
   14. moom调整窗口尺寸的神奇
   15. tunnelblick 使用这个链接公司vpn
   16. spechtilite使用这个链接翻墙vpn**直接在github上搜**
-  16. popclip剪切软件
-  17. gestimer
-  18. folx
+  17. 现在使用alfred自带的clipboard(需要在设置里面打开)
+  18. gestimer
   
 ## 以上软件除了dash**因为我买了**。其余的都可以在[xclient.info](http://xclient.info/)和[mac破解](http://www.macappstore.net/)找到
