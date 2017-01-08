@@ -18,5 +18,6 @@
   16. spechtilite使用这个链接翻墙vpn**直接在github上搜**
   17. 现在使用alfred自带的clipboard(需要在设置里面打开)
   18. gestimer
+  19. folx 
   
 ## 以上软件除了dash**因为我买了**。其余的都可以在[xclient.info](http://xclient.info/)和[mac破解](http://www.macappstore.net/)找到
