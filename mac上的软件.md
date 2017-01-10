@@ -18,6 +18,5 @@
   16. spechtilite使用这个链接翻墙vpn**直接在github上搜**
   17. popclip
   18. gestimer
-  19. pastebot
   
 ## 以上软件除了dash**因为我买了**。其余的都可以在[xclient.info](http://xclient.info/)和[mac破解](http://www.macappstore.net/)找到
