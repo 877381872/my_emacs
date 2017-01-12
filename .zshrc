@@ -86,7 +86,7 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias cl="clear"
 alias md="mkdir"
-alias emacs="/Applications/Emacs.app/Contents/MacOS/Emacs -nw"
+alias vim="nvim"
 
 export NVM_DIR="/Users/per/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
