@@ -9,12 +9,12 @@
   7. dash开发文档神器
   8. docker
   9. eim企业qq
-  10. emacs 写代码就用它
+  10. vim([z-vim](https://github.com/zongUMR/Z-vim))~~emacs~~ 写代码就用它
   11. chrome
   12. iterm2
   13. markman 看图片
   14. moom调整窗口尺寸的神奇
-  15. tunnelblick 使用这个链接公司vpn
+  15. shimo~~tunnelblick~~ 使用这个链接公司vpn
   16. spechtilite使用这个链接翻墙vpn**直接在github上搜**
   17. popclip
   18. gestimer
