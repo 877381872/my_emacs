@@ -1,3 +1,4 @@
+```
 ;;; self-config
 (add-hook 'prog-mode-hook 'linum-mode)  ;显示行数
 (display-time-mode 1) ; 显示时间
@@ -94,8 +95,42 @@ Version 2016-07-04"
 ;;; 跳转定义之后再跳转回文件
 (global-set-key (kbd "C-c C-b") 'pop-tag-mark)
 
-;;; 直接在emacs运行当前文件，比如go程序，js程序
+;;; typescript配置
+(defun setup-tide-mode ()
+  (interactive)
+  (tide-setup)
+  (flycheck-mode +1)
+  (setq flycheck-check-syntax-automatically '(save mode-enabled))
+  (eldoc-mode +1)
+  (tide-hl-identifier-mode +1)
+  ;; company is an optional dependency. You have to
+  ;; install it separately via package-install
+  ;; `M-x package-install [ret] company`
+  (company-mode +1))
 
+;; aligns annotation to the right hand side
+(setq company-tooltip-align-annotations t)
+
+;; formats the buffer before saving
+(add-hook 'before-save-hook 'tide-format-before-save)
+
+(add-hook 'typescript-mode-hook #'setup-tide-mode)
+
+;;; format options
+(setq tide-format-options '(:insertSpaceAfterFunctionKeywordForAnonymousFunctions t :placeOpenBraceOnNewLineForFunctions nil))
+
+(add-to-list 'auto-mode-alist '("\\.tsx\\'" . web-mode))
+(add-hook 'web-mode-hook
+          (lambda ()
+            (when (string-equal "tsx" (file-name-extension buffer-file-name))
+              (setup-tide-mode))))
+;;; (add-hook 'js2-mode-hook #'setup-tide-mode)
+;;; (add-hook 'web-mode-hook
+          ;;; (lambda ()
+          ;;;  (when (string-equal "jsx" (file-name-extension buffer-file-name))
+              ;;; (setup-tide-mode))))
+;;; -------------------------------
+;;; 直接在emacs运行当前文件，比如go程序，js程序
 (defun xah-run-current-file ()
   "Execute the current file.
 For example, if the current buffer is the file x.py, then it'll call 「python x.py」 in a shell.
@@ -149,5 +184,6 @@ version 2016-01-28"
               (message "Running…")
               (shell-command -cmd-str "*xah-run-current-file output*" ))
           (message "No recognized program file suffix for this file."))))))
-(global-set-key (kbd "C-c C-r") 'xah-run-current-file)
+(global-set-key [f6] 'xah-run-current-file)
 (provide 'custom)
+```
