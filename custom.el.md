@@ -189,6 +189,5 @@ version 2016-01-28"
 ```
 ----
 ### 额外配置
-  * ```eshell-directory-name```可以改成自己用的shell
-  
-  * ```exec-path``` 这个字端可以加一些path进去。比如gopath和其他的path
+  1.```eshell-directory-name```可以改成自己用的shell  
+  2.```exec-path``` 这个字端可以加一些path进去。比如gopath和其他的path
