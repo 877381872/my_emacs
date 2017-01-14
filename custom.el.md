@@ -47,6 +47,9 @@
 
 ;;; org-mode config
 (add-hook 'org-mode-hook (lambda () (setq truncate-lines nil)))
+(eval-after-load "org"
+'(require 'ox-md nil t))
+
 ;;; 缩紧显示
 (add-hook 'prog-mode-hook 'highlight-indent-guides-mode)
 (setq highlight-indent-guides-method 'column)
