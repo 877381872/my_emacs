@@ -1,6 +1,6 @@
 # mac上我常用的软件
 ### 软件列表
-  1. 1password
+  1. enpass(~~1password~~)
   2. 网易云音乐
   3. wechat
   4. Mac自带邮件客户端
@@ -19,4 +19,5 @@
   17. popclip
   18. gestimer
   
-## 以上软件除了dash**因为我买了**。其余的都可以在[xclient.info](http://xclient.info/)和[mac破解](http://www.macappstore.net/)找到
+## 以上软件除了dash.enpass
+**因为我买了**。其余的都可以在[xclient.info](http://xclient.info/)和[mac破解](http://www.macappstore.net/)找到
