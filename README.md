@@ -23,8 +23,4 @@
 * dash-at-point
 * eslint-fix
 
-## 现在更喜欢使用fish和oh-my-fish
-* 首先在github上自行下载fish 和oh-my-fish
-* 把config.fish.md重命名为```config.fish```然后放入```~/.config/fish```中
-
 ## 修改js2-mode和js2-jsx－mode的ternjs补全
