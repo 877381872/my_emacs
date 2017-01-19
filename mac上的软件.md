@@ -17,7 +17,7 @@
 15. shimo~~tunnelblick~~ 使用这个链接公司vpn
 16. [shadowsocksX-NG](https://github.com/shadowsocks/ShadowsocksX-NG)
 17. popclip
-18. paw
+18. paw(要在偏好的网络设置里把代理打开。选择自定义代理，然后勾选前两项)
 
 ## 以上软件除了dash和enpass(**因为我买了**。)
 其余的都可以在[爱情守望者](http://www.waitsun.com/)
