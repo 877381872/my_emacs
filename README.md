@@ -1,4 +1,5 @@
 ## 使用[prelude](https://github.com/bbatsov/prelude)的配置
+**给git加上http和https代理[git加翻墙代理](https://segmentfault.com/q/1010000000118837)
 
 ### 按照上面的github上面的安装好之后，在 ```~/.emacs.d/personal``` 中把```custom.el```放进去
 
