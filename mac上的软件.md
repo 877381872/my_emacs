@@ -15,7 +15,7 @@
 13. markman 看图片
 14. moom调整窗口尺寸的神奇
 15. shimo~~tunnelblick~~ 使用这个链接公司vpn
-16. spechtilite使用这个链接翻墙vpn**直接在github上搜**
+16. [shadowsocksX-NG](https://github.com/shadowsocks/ShadowsocksX-NG)
 17. popclip
   
 ## 以上软件除了dash.enpass(**因为我买了**。)
