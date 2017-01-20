@@ -2,6 +2,9 @@
 
 *给git加上http和https代理[git加翻墙代理](https://segmentfault.com/q/1010000000118837)*
 
+### 推荐使用spacemacs(直接github搜索安装)
+**安装之后直接把.spacemacs里面的代码放到生成的.spacemacs的用户配置中**
+
 ### 按照上面的github上面的安装好之后，在 ```~/.emacs.d/personal``` 中把```custom.el```放进去
 
 #### 需要的package
