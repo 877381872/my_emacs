@@ -86,7 +86,8 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias cl="clear"
 alias md="mkdir"
-alias vim="nvim"
+alias setP='export http_proxy=http://127.0.0.1:1087 https_proxy=http://127.0.0.1:1087'
+alias unsetP='unset http_proxy https_proxy'
 
 export NVM_DIR="/Users/per/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
