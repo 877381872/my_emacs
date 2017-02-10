@@ -5,7 +5,7 @@ export ZSH=/Users/per/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="agnoster"
+ZSH_THEME="sunaku"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -88,6 +88,7 @@ alias cl="clear"
 alias md="mkdir"
 alias setP='export http_proxy=http://127.0.0.1:1087 https_proxy=http://127.0.0.1:1087'
 alias unsetP='unset http_proxy https_proxy'
+alias top="htop"
 
 export NVM_DIR="/Users/per/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
