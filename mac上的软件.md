@@ -3,7 +3,7 @@
 1. enpass(~~1password~~)
 2. 网易云音乐
 3. wechat 
-4. Mac自带邮件客户端
+4. Spark
 5. alfred3 效率神器
 6. cleanmymac3清理工具
 7. dash开发文档神器
