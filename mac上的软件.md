@@ -18,6 +18,7 @@
 16. [shadowsocksX-NG](https://github.com/shadowsocks/ShadowsocksX-NG)
 17. popclip
 18. Tap for Mac
+19. 欧路词典(在[xclient.info](http://xclient.info)上)
 
 ## 以上软件除了dash和enpass(**因为我买了**。)
 其余的都可以在[爱情守望者](http://www.waitsun.com/)找到破解版
