@@ -16,7 +16,7 @@
 14. moom调整窗口尺寸的神奇
 15. shimo~~tunnelblick~~ 使用这个链接公司vpn
 16. [shadowsocksX-NG](https://github.com/shadowsocks/ShadowsocksX-NG)
-17. popclip
+17. popclip(安装Eudic(欧路词典)插件)
 18. Tap for Mac
 19. 欧路词典(在[xclient.info](http://xclient.info)上)
 
