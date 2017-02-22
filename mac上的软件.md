@@ -20,7 +20,6 @@
 18. Tap for Mac
 19. 欧路词典
 20. tweetbot
-21. calender 366 plus
 
 ## 以上软件除了dash和enpass(**因为我买了**。)
 其余的都可以在[爱情守望者](http://www.waitsun.com/)或者[xclient.info](http://xclient.info)找到破解版
