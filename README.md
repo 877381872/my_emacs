@@ -1,6 +1,8 @@
 ## 使用[prelude](https://github.com/bbatsov/prelude)的配置
-
 *给git加上http和https代理[git加翻墙代理](https://segmentfault.com/q/1010000000118837)*
+
+## iterm2配置
+在个性化配置中的Profiles中的Command的login shell设置Send text at start为`tmux attach -t init || tmux new -s init`
 
 ### 推荐使用spacemacs(直接github搜索安装)
 **安装之后直接把.spacemacs里面的代码放到生成的.spacemacs的用户配置中**
