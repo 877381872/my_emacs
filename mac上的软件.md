@@ -19,7 +19,7 @@
 17. popclip(安装Eudic(欧路词典)插件)
 18. Tap for Mac
 19. 欧路词典
-20. tweetbot
+20. 使用网页版的[tweetdeck](https://tweetdeck.twitter.com/)~~tweetbot~~
 21. istatistica
 
 ## 以上软件除了dash和enpass(**因为我买了**。)
