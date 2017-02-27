@@ -21,3 +21,4 @@
    20. wget
    21. xz
    22. yarn
+   23. youtube-dl
