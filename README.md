@@ -1,5 +1,6 @@
 ## 使用[prelude](https://github.com/bbatsov/prelude)的配置
-*给git加上http和https代理[git加翻墙代理](https://segmentfault.com/q/1010000000118837)*
+* 给git加上http和https代理[git加翻墙代理](https://segmentfault.com/q/1010000000118837)*
+* 个人设置-键盘-输入法-自动切换文稿的输入源
 
 ## iterm2配置
 在个性化配置中的Profiles中的Command的login shell设置Send text at start为`tmux attach -t init || tmux new -s init`
