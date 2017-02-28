@@ -22,8 +22,11 @@
    21. xz
    22. yarn
    23. youtube-dl
+   
 ---
-## brew cask安装的软件
+
+** [[https://caskroom.github.io/][brew cask]]安装的软件
+
 1. plistedit-pro
 2. virtualbox
 3. telegram-desktop
