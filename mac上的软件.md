@@ -2,7 +2,7 @@
 ### 软件列表
 1. enpass(~~1password~~)
 2. 网易云音乐
-3. telegram desktop(*可设置代理*)
+3. telegram desktop(*可设置代理*)[收发微信消息](https://blog.1a23.com/2017/01/09/EFB-How-to-Send-and-Receive-Messages-from-WeChat-on-Telegram-zh-CN/)
 4. Spark
 5. alfred3 效率神器
 6. cleanmymac3清理工具
