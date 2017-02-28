@@ -2,7 +2,7 @@
 ### 软件列表
 1. enpass(~~1password~~)
 2. 网易云音乐
-3. wechat 
+3. telegram desktop(*可设置代理*)
 4. Spark
 5. alfred3 效率神器
 6. cleanmymac3清理工具
