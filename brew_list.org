@@ -22,6 +22,7 @@
    21. xz
    22. yarn
    23. youtube-dl
+   24. vim(latest)
    
 ---
 
@@ -29,5 +30,5 @@
 
 1. plistedit-pro
 2. virtualbox
-3. telegram-desktop
+3. telegram
 4. shadowsocksx
