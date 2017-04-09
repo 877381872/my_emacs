@@ -23,6 +23,7 @@
    22. yarn
    23. youtube-dl
    24. vim(latest)
+   25. axel(多线程下载工具)
    
 ---
 
