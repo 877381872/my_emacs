@@ -12,17 +12,15 @@
 + emacs 写代码就用它
 + chrome
 + iterm2
-+ markman 看图片
 + moom调整窗口尺寸的神奇
 + shimo~~tunnelblick~~ 使用这个链接公司vpn
 + Surge:使用iCloud里的配置文件~~([shadowsocksX-NG](https://github.com/shadowsocks/ShadowsocksX-NG))~~
 + popclip(安装Eudic(欧路词典)插件)
 + 欧路词典
 + tweetbot
-+ istatistica
++ istat menus
 + bartender 2
 + dropbox
-+ downcast 听播客必备
 
 ## 以上软件除了dash和enpass(**因为我买了**。)
 其余的都可以在[爱情守望者](http://www.waitsun.com/)或者[xclient.info](http://xclient.info)找到破解版
