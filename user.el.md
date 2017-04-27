@@ -1,5 +1,7 @@
 ```
-;;; package --Summary
+;;; package --- Summary
+;;; Commentary
+
 ;;; display setting
 (display-time-mode 1) ; 显示时间
 (setq display-time-24hr-format t) ; 24小时格式
@@ -23,7 +25,7 @@
 ;;; 快捷键设置
 (global-set-key [f9] 'neotree-toggle)
 (global-set-key (kbd "C-x o") 'ace-window)
-(global-set-key (kbd "C-;") 'avy-goto-char)
+(global-set-key (kbd "C-c C-;") 'avy-goto-char)
 (global-set-key (kbd "C-'") 'dash-at-point-with-docset)
 (global-set-key (kbd "C-c C-q") 'tern-find-definition)
 ;;; helm-swoop-config 功能强大，函数跳转
@@ -33,6 +35,11 @@
 (global-set-key (kbd "C-c M-i") 'helm-multi-swoop)
 (global-set-key (kbd "C-x M-i") 'helm-multi-swoop-all)
 (global-set-key [f6] 'xah-run-current-file)
+;;; 设置保存前自动清除多余空格
+(global-whitespace-cleanup-mode)
+(global-set-key (kbd "C-x C") 'whitespace-cleanup)
+;;; set the avy-goto-line
+(global-set-key (kbd "C-c C-l") 'avy-goto-line)
 
 ;;; web config
 (autoload 'tern-mode "tern.el" nil t)
@@ -50,23 +57,30 @@
 ;;; eslint-fix eslint自动纠错
 (eval-after-load 'js-mode
   '(add-hook 'js-mode-hook (lambda () (add-hook 'after-save-hook 'eslint-fix nil t))))
-
 (eval-after-load 'js2-mode
   '(add-hook 'js2-mode-hook (lambda () (add-hook 'after-save-hook 'eslint-fix nil t))))
 (add-hook 'css-mode-hook 'xah-css-mode)
 (add-hook 'less-mode-hook 'xah-css-mode)
 (add-hook 'scss-mode-hook 'xah-css-mode)
+(setq-default
+ ;; js2-mode
+ js2-basic-offset 2
+ ;; web-mode
+ css-indent-offset 2
+ scss-indent-offset 2
+ web-mode-markup-indent-offset 2
+ web-mode-css-indent-offset 2
+ web-mode-code-indent-offset 2
+ web-mode-attr-indent-offset 2)
+(with-eval-after-load 'web-mode
+ (add-to-list 'web-mode-indentation-params '("lineup-args" . nil))
+ (add-to-list 'web-mode-indentation-params '("lineup-concats" . nil))
+ (add-to-list 'web-mode-indentation-params '("lineup-calls" . nil)))
 
 ;;; org-mode config
 (add-hook 'org-mode-hook (lambda () (setq truncate-lines nil)))
 (eval-after-load "org"
 '(require 'ox-md nil t))
-
-;;; 设置保存前自动清除多余空格
-(global-whitespace-cleanup-mode)
-(global-set-key (kbd "C-x C") 'whitespace-cleanup)
-;;; set the avy-goto-line
-(global-set-key (kbd "C-l") 'avy-goto-line)
 
 ;;; config the dash in emacs
 (autoload 'dash-at-point "dash-at-point"
@@ -75,8 +89,13 @@
 (global-set-key "\C-ce" 'dash-at-point-with-docset)
 
 ;;; goalng setting
-;;; golang程序保存前自动format
-(add-hook 'before-save-hook #'gofmt-before-save)
+(defun my-go-mode-hook ()
+  ; Use goimports instead of go-fmt
+  (setq gofmt-command "goimports")
+  ; Call Gofmt before saving
+  (add-hook 'before-save-hook 'gofmt-before-save)
+)
+(add-hook 'go-mode-hook 'my-go-mode-hook)
 ;;; 跳转定义之后再跳转回文件
 (global-set-key (kbd "C-c C-b") 'pop-tag-mark)
 
