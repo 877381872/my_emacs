@@ -1,14 +1,13 @@
 # mac上我常用的软件
 ### 软件列表
-+ 1password(~~enpass:找到了使用破解1password的方法，所以虽然买了enpass，但是1p太好用了~~)：不要登录1p的账号！直接选择iCloud同步！就不会冻结
++ 1password(~~enpass:找到了使用破解1password的方法，所以虽然买了enpass，但是1p太好用了~~)：不要登录1p的账号！直接选择dropbox同步！就不会冻结
 + 网易云音乐
-+ telegram(*可设置代理*)[收发微信消息](https://blog.1a23.com/2017/01/09/EFB-How-to-Send-and-Receive-Messages-from-WeChat-on-Telegram-zh-CN/)
-+ Spark
++ telegram[收发微信消息](https://blog.1a23.com/2017/01/09/EFB-How-to-Send-and-Receive-Messages-from-WeChat-on-Telegram-zh-CN/)
++ 原生mail
 + alfred3 效率神器
-+ cleanmymac3清理工具
++ dishydisk清理工具
 + dash开发文档神器
 + docker
-+ eim企业qq
 + emacs 写代码就用它
 + chrome
 + iterm2
@@ -18,7 +17,6 @@
 + popclip(安装Eudic(欧路词典)插件)
 + 欧路词典
 + tweetbot
-+ istat menus
 + bartender 2
 + dropbox
 
