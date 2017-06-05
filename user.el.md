@@ -54,11 +54,6 @@
 (add-to-list 'auto-mode-alist '("\\.js\\'" . js2-mode))
 (add-to-list 'auto-mode-alist '("\\.vue?\\'" . vue-html-mode))
 (add-hook 'js-mode-hook 'js2-minor-mode)
-;;; eslint-fix eslint自动纠错
-(eval-after-load 'js-mode
-  '(add-hook 'js-mode-hook (lambda () (add-hook 'after-save-hook 'eslint-fix nil t))))
-(eval-after-load 'js2-mode
-  '(add-hook 'js2-mode-hook (lambda () (add-hook 'after-save-hook 'eslint-fix nil t))))
 (add-hook 'css-mode-hook 'xah-css-mode)
 (add-hook 'less-mode-hook 'xah-css-mode)
 (add-hook 'scss-mode-hook 'xah-css-mode)
@@ -211,10 +206,8 @@ version 2016-01-28"
 * xah-css-mode
 * go-snippets
 * whitespace-clearup-mode
-* highlight-indent-guides**记不清了，可以去melpa搜索**
 * linum-relative
 * dash-at-point
-* eslint-fix
 * all-the-icons
 
 ---
