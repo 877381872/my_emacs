@@ -6,7 +6,6 @@
 (display-time-mode 1) ; 显示时间
 (setq display-time-24hr-format t) ; 24小时格式
 (setq display-time-day-and-date t) ; 显示日期
-(linum-relative-mode t) ;;; 相对行号
 (global-auto-complete-mode t) ;;; globel auto-complete
 (global-flycheck-mode t) ;;; global flycheck-mode
 ;;; undo-tree
@@ -209,6 +208,8 @@ version 2016-01-28"
 * linum-relative
 * dash-at-point
 * all-the-icons
+* helm-swoop
+* tide
 
 ---
 备注
