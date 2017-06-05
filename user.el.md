@@ -215,6 +215,7 @@ version 2016-01-28"
 * linum-relative
 * dash-at-point
 * eslint-fix
+* all-the-icons
 
 ---
 备注
