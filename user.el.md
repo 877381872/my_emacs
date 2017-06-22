@@ -20,7 +20,7 @@
 ;; Setting English Font
 (set-face-attribute
  'default nil :font "Operator Mono 13")
-(load-theme 'heroku t)
+(load-theme 'spacemacs-darak t)
 (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
 
 ;;; 快捷键设置
@@ -214,7 +214,7 @@ version 2016-01-28"
 * all-the-icons
 * helm-swoop
 * tide
-* heroku-theme
+* spacemacs-theme
 * rainbow-delimiters
 
 ---
