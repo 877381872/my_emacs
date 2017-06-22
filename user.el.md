@@ -20,6 +20,8 @@
 ;; Setting English Font
 (set-face-attribute
  'default nil :font "Operator Mono 13")
+(load-theme 'heroku t)
+(add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
 
 ;;; 快捷键设置
 (global-set-key [f9] 'neotree-toggle)
@@ -36,7 +38,9 @@
 (global-set-key [f6] 'xah-run-current-file)
 ;;; 设置保存前自动清除多余空格
 (global-whitespace-cleanup-mode)
+(add-hook 'before-save-hook 'whitespace-cleanup)
 (global-set-key (kbd "C-x C") 'whitespace-cleanup)
+()
 ;;; set the avy-goto-line
 (global-set-key (kbd "C-c C-l") 'avy-goto-line)
 
@@ -210,6 +214,8 @@ version 2016-01-28"
 * all-the-icons
 * helm-swoop
 * tide
+* heroku-theme
+* rainbow-delimiters
 
 ---
 备注
