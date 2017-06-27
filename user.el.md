@@ -126,11 +126,11 @@
           (lambda ()
             (when (string-equal "tsx" (file-name-extension buffer-file-name))
               (setup-tide-mode))))
-;;; (add-hook 'js2-mode-hook #'setup-tide-mode)
-;;; (add-hook 'web-mode-hook
-          ;;; (lambda ()
-          ;;;  (when (string-equal "jsx" (file-name-extension buffer-file-name))
-              ;;; (setup-tide-mode))))
+ (add-hook 'js2-mode-hook #'setup-tide-mode)
+ (add-hook 'web-mode-hook
+           (lambda ()
+           (when (string-equal "jsx" (file-name-extension buffer-file-name))
+               (setup-tide-mode))))
 ;;; -------------------------------
 
 ;;; 直接在emacs运行当前文件，比如go程序，js程序
@@ -216,6 +216,7 @@ version 2016-01-28"
 * tide
 * solarize-theme
 * rainbow-delimiters
+* web-mode
 
 ---
 备注
