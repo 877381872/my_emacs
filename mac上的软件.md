@@ -20,7 +20,7 @@
 + bartender 2
 + dropbox
 + reeder
-+ folx pro
++ tap for mac
 
 ## 以上软件除了dash和enpass(**因为我买了**。)
 其余的都可以在[爱情守望者](http://www.waitsun.com/)或者[xclient.info](http://xclient.info)找到破解版
