@@ -1,4 +1,3 @@
-```
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/per/.oh-my-zsh
 
@@ -96,4 +95,3 @@ export NVM_DIR="/Users/per/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
 
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
-```
