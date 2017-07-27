@@ -19,7 +19,7 @@
 (setq neo-theme 'icons)
 ;; Setting English Font
 (set-face-attribute
- 'default nil :font "Operator Mono 13")
+ 'default nil :font "Fira Code Retina 13")
 (load-theme 'solarize-darak t)
 (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
 
@@ -222,4 +222,4 @@ version 2016-01-28"
 备注
 1. 要安装aspell(用brew就可以)
 2. [all-file-icons](https://github.com/domtronn/all-the-icons.el)需要安装fonts里面的所有字体
-3. Mac安装[Operator Mono]字体, **字体文件在百度网盘的`/全部文件/我的文档`**，解压之后安装light的字体就可以,并且在.spcacemacs中设置相应字体
+3. Mac安装[FiraCode](https://github.com/tonsky/FiraCode)字体
