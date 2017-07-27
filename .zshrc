@@ -1,3 +1,4 @@
+```
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/per/.oh-my-zsh
 
@@ -5,7 +6,7 @@ export ZSH=/Users/per/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="sunaku"
+ZSH_THEME="ys"
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -27,7 +28,7 @@ ZSH_THEME="sunaku"
 # DISABLE_AUTO_TITLE="true"
 
 # Uncomment the following line to enable command auto-correction.
-# ENABLE_CORRECTION="true"
+ENABLE_CORRECTION="true"
 
 # Uncomment the following line to display red dots whilst waiting for completion.
 # COMPLETION_WAITING_DOTS="true"
@@ -49,7 +50,7 @@ ZSH_THEME="sunaku"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git)
+plugins=(git oxs emacs npm autojump zsh-autosuggestions)
 
 # User configuration
 
@@ -59,7 +60,6 @@ export GOPATH="/Users/per/GoWork"
 export PATH=$PATH:$GOPATH/bin
 
 source $ZSH/oh-my-zsh.sh
-
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
 
@@ -86,9 +86,14 @@ source $ZSH/oh-my-zsh.sh
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 alias cl="clear"
 alias md="mkdir"
-alias setP='export http_proxy=http://127.0.0.1:1087 https_proxy=http://127.0.0.1:1087'
+alias setP='export http_proxy=http://127.0.0.1:6152 https_proxy=http://127.0.0.1:6152'
 alias unsetP='unset http_proxy https_proxy'
 alias top="htop"
+alias vim="/usr/local/bin/vim";
 
+export EDITOR="/usr/local/bin/vim"
 export NVM_DIR="/Users/per/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+```
