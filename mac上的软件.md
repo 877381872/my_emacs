@@ -19,9 +19,6 @@
 + tweetbot
 + bartender 2
 + dropbox
-+ reeder
-+ tap for mac
-+ adguard(这个从官网下，key从1password的adguard账户里选没用过的)
 
 ## 以上软件除了dash和enpass(**因为我买了**。)
 其余的都可以在[爱情守望者](http://www.waitsun.com/)或者[xclient.info](http://xclient.info)找到破解版
