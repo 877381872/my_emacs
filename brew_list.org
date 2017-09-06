@@ -23,9 +23,7 @@
    22. yarn
    23. youtube-dl
    24. vim
-   
- # test
-   25. axel(多线程下载工具)
+   25. axel(多线程下载工具)
    26. gnupg
 ---
 
@@ -33,3 +31,4 @@
 
 1. plistedit-pro
 2. virtualbox
+
