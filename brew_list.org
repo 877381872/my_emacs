@@ -22,14 +22,14 @@
    21. xz
    22. yarn
    23. youtube-dl
-   24. vim(latest)
+   24. vim
+   
+ # test
    25. axel(多线程下载工具)
-
+   26. gnupg
 ---
 
 ** [[https://caskroom.github.io/][brew cask]]安装的软件
 
 1. plistedit-pro
 2. virtualbox
-3. telegram
-4. shadowsocksx
