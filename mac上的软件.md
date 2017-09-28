@@ -4,7 +4,7 @@
 + 网易云音乐
 + telegram[收发微信消息](https://blog.1a23.com/2017/01/09/EFB-How-to-Send-and-Receive-Messages-from-WeChat-on-Telegram-zh-CN/)
 + 原生mail
-+ 使用spotlight
++ alfred
 + dishydisk清理工具
 + dash开发文档神器
 + docker
@@ -17,7 +17,6 @@
 + popclip(安装Eudic(欧路词典)插件)
 + 欧路词典
 + tweetbot
-+ pastebot
 + bartender 3
 + dropbox
 
