@@ -19,6 +19,7 @@
 + tweetbot
 + bartender 3
 + dropbox
++ Yoink(官网下载即可)[截屏自动保存](https://eternalstorms.wordpress.com/2015/01/15/capture-selective-screenshots-in-yoink/)
 
 ## 以上软件除了dash和enpass(**因为我买了**。)
 其余的都可以在[爱情守望者](http://www.waitsun.com/)或者[xclient.info](http://xclient.info)找到破解版
