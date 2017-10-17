@@ -20,7 +20,7 @@
 ;; Setting English Font
 (set-face-attribute
  'default nil :font "Fira Code Retina 13")
-(load-theme 'solarize-darak t)
+(load-theme 'solarized-dark t)
 (add-hook 'prog-mode-hook #'rainbow-delimiters-mode)
 
 ;;; 快捷键设置
