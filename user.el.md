@@ -8,8 +8,10 @@
 (setq display-time-day-and-date t) ; 显示日期
 (global-auto-complete-mode t) ;;; globel auto-complete
 (global-flycheck-mode t) ;;; global flycheck-mode
-;;; undo-tree
-(global-undo-tree-mode)
+(global-linum-mode t)
+ ;; Make linums relative by default
+  (with-eval-after-load 'linum
+    (linum-relative-toggle))
 (require 'go-autocomplete)
 (require 'auto-complete-config)
 (ac-config-default)
@@ -197,7 +199,8 @@ version 2016-01-28"
 * 需要安装ternjs
 * neotree
 * js2-mode
-* js2-jsx-mode
+* jsx-mode
+* vue-mode
 * tern
 * tern-auto-complete
 * undo-tree
@@ -217,6 +220,12 @@ version 2016-01-28"
 * solarize-theme
 * rainbow-delimiters
 * web-mode
+
+---
+注意事项
+1. 修改`init-elpa.el`中的软件源
+2. 修改`init-osx-keys.el`中的meta键位
+3. 修改`init-sessions.el`中的desktop-save-mode为0
 
 ---
 备注
