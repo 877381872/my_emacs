@@ -189,7 +189,7 @@ version 2016-01-28"
               (message "Running…")
               (shell-command -cmd-str "*xah-run-current-file output*" ))
           (message "No recognized program file suffix for this file."))))))
-(provide 'user)
+(provide 'init-local)
 ```
 ---
 1. 使用[purcell](https://github.com/purcell/emacs.d)
@@ -203,7 +203,6 @@ version 2016-01-28"
 * vue-mode
 * tern
 * tern-auto-complete
-* undo-tree
 * go-mode
 * flymake-go
 * go-auto-complete
