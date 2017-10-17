@@ -190,8 +190,8 @@ version 2016-01-28"
 (provide 'user)
 ```
 ---
-1. 使用[ohai-emacs](https://github.com/bodil/ohai-emacs)
-2. 然后把此文件中的代码部分保存为文件`user.el`放在`.emacs.d`文件夹中
+1. 使用[purcell](https://github.com/purcell/emacs.d)
+2. 然后把此文件中的代码部分保存为文件`init-preload-local.el`放在`.emacs.d/lisp/`文件夹中
 ---
 ## 需要安装的package
 * 需要安装ternjs
