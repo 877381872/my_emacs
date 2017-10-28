@@ -55,7 +55,7 @@ plugins=(git oxs emacs npm autojump zsh-autosuggestions)
 
 export PATH="/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin"
 export MANPATH="/usr/bin/man:$MANPATH"
-export GOPATH="/Users/per/GoWork"
+export GOPATH="/Users/per/go"
 export PATH=$PATH:$GOPATH/bin
 
 source $ZSH/oh-my-zsh.sh
