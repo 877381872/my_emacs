@@ -17,7 +17,7 @@
 + tweetbot
 + bartender 3
 + dropbox
-+ Yoink(官网下载即可)[截屏自动保存](https://eternalstorms.wordpress.com/2015/01/15/capture-selective-screenshots-in-yoink/)
++ unclutter
 + appdelete
 + bettertouchtool
 
