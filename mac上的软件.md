@@ -17,8 +17,7 @@
 + tweetbot
 + bartender 3
 + dropbox
-+ Yoink(app store已买)
 + appdelete
 + bettertouchtool
-+ keyboard maestro 
 + boom3d
++ paste2
