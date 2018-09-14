@@ -262,7 +262,7 @@
    ;;                       text-mode
    ;;   :size-limit-kb 1000)
    ;; (default nil)
-   dotspacemacs-line-numbers nil
+   dotspacemacs-line-numbers 'relative
    ;; Code folding method. Possible values are `evil' and `origami'.
    ;; (default 'evil)
    dotspacemacs-folding-method 'evil
@@ -325,16 +325,14 @@
   (display-time-mode 1) ; 显示时间
   (setq display-time-24hr-format t) ; 24小时格式
   (setq display-time-day-and-date t) ; 显示日期
-  (when (version<= "26.0.50" emacs-version )
-    (global-display-line-numbers-mode))
-  ;; Make linums relative by default
-  (with-eval-after-load 'linum
-    (linum-relative-toggle))
  ;;; 设置保存前自动清除多余空格
   (add-hook 'before-save-hook 'whitespace-cleanup)
 
   ;; golang config
-  (setq gofmt-command "goimports")
+(lambda ()
+              (add-hook 'before-save-hook 'gofmt-before-save)
+              (setq gofmt-command "goimports")
+              ))
   )
 
 ;; Do not write anything past this comment. This is where Emacs will
