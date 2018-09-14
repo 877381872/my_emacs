@@ -327,9 +327,9 @@
   (setq display-time-day-and-date t) ; 显示日期
  ;;; 设置保存前自动清除多余空格
   (add-hook 'before-save-hook 'whitespace-cleanup)
-
-  ;; golang config
-(lambda ()
+;; golang config
+  (add-hook 'go-mode-hook
+            (lambda ()
               (add-hook 'before-save-hook 'gofmt-before-save)
               (setq gofmt-command "goimports")
               ))
